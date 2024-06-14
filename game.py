@@ -56,13 +56,13 @@ while running:
     if not game_over:
         keys = pygame.key.get_pressed()
         if keys[pygame.K_w] and player1_pos.top > 0:
-            player1_pos.move_ip(0, -paddle_speed)  # Move player 1 paddle up
+            player1_pos.move_ip(0, -paddle_speed) 
         if keys[pygame.K_s] and player1_pos.bottom < screen_height:
-            player1_pos.move_ip(0, paddle_speed)   # Move player 1 paddle down
+            player1_pos.move_ip(0, paddle_speed)  
         if keys[pygame.K_UP] and player2_pos.top > 0:
-            player2_pos.move_ip(0, -paddle_speed)  # Move player 2 paddle up
+            player2_pos.move_ip(0, -paddle_speed) 
         if keys[pygame.K_DOWN] and player2_pos.bottom < screen_height:
-            player2_pos.move_ip(0, paddle_speed)   # Move player 2 paddle down
+            player2_pos.move_ip(0, paddle_speed) 
 
         # Move the ball
         ball.move_ip(ball_dx, ball_dy)
